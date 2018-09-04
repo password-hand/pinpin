@@ -1,0 +1,111 @@
+<!--logs.wxml-->
+<view class="user-info">
+  <!-- 头部table切换 -->
+  <view class='table-nav around'>
+    <text wx:for="{{tableNav}}" class="{{checkedNav == index?'active':''}}" data-id='{{index}}' bindtap='changeCon'>{{item}}</text>
+  </view>
+
+  <!--显示全部信息  -->
+  <view wx:if="{{checkedNav==0}}" class='appoint-lesson'>
+    <!--没有内容  -->
+    <view wx:if="{{appointmentLesson.length == 0}}" class='no-lesson'>
+      <view class='img-box around'>
+        <image src='../../images/my/appointment.png'></image>
+      </view>
+      <view class='title'>无任何预约记录</view>
+      <view class='con'>「七只碗健身拼单，有健康，有实惠，一起健身交朋友」</view>
+      <button plain='true' bindtap='gotoLab'>立即去拼单约课</button>
+    </view>
+    <!-- 有内容 -->
+    <view wx:else>
+      <view class='order-shop' wx:for='{{appointmentLesson}}'>
+        <view class='title between'>
+          <view class='shop'>{{item.shop}}</view>
+          <view class='address'>
+            <image src='../../images/my/position.png'></image>
+            <text>{{item.address}}</text>
+          </view>
+        </view>
+
+        <view class='body between'>
+          <view class='main'>
+            <image src='../../images/my/head.png'></image>
+            <view class='lesson-info'>
+              <view class='lesson-title'>
+                <text>课程名称：</text>
+                <text>{{item.lesson}}</text>
+              </view>
+
+              <view>
+                <text>教练：</text>
+                <text>{{item.coach}}</text>
+              </view>
+
+              <view>
+                <text>拼主：</text>
+                <image src='../../images/my/head-pic.png'></image>
+                <text>{{item.spellingMaster}}</text>
+              </view>
+
+              <view>
+                <text>参与拼单：</text>
+                <image src='../../images/my/head-pic.png'></image>
+                <text>{{item.collage}}</text>
+              </view>
+              <view>
+                <text>上课时间：</text>
+                <text>{{item.time}}</text>
+              </view>
+            </view>
+          </view>
+          <view class='price'>
+            <view>￥
+              <text>{{item.price}}</text>
+            </view>
+            <view>x
+              <text>{{item.count}}</text>
+            </view>
+          </view>
+        </view>
+
+        <view class='order between'>
+          <view>
+            <view>
+              <text>订单编号：</text>
+              <text>{{item.orderNum}}</text>
+            </view>
+            <view>
+              <text>实际付款</text>
+            </view>
+            <view>
+              <text>订单状态</text>
+            </view>
+          </view>
+          <view style='text-align: right;'>
+            <view class='copy-btn'>复制</view>
+            <view>
+              <text class='color-red'>￥</text>
+              <text class='color-red'>{{item.price}}</text> </view>
+            <view>
+              <text class='color-red'>{{item.orderStage}}</text>
+            </view>
+          </view>
+        </view>
+
+        <view class='call between'>
+          <view class='call-phone'>
+            <image src='../../images/my/call.png'></image>
+            <text>拨打店家电话</text>
+          </view>
+          <view class='btn-box'>
+            <button type='default' size='mini' style='margin-right:20rpx;'>删除订单</button>
+            <button type='default' size='mini'>再次预约</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 显示训练累计 -->
+  <view wx:else>累计</view>
+</view>

@@ -1,0 +1,134 @@
+/**index.wxss**/
+
+.head {
+  background: #13cfab;
+  height: 80rpx;
+  padding: 30rpx;
+}
+
+.derect text {
+  color: #fff;
+  font-size: 30rpx;
+  margin-right: 8rpx;
+}
+
+.derect image {
+  width: 21rpx;
+  height: 28rpx;
+}
+
+.input-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 540rpx;
+  height: 40rpx;
+  border-radius: 40rpx;
+  background: #16bf9f;
+  padding: 20rpx;
+}
+
+.input-box image {
+  width: 33rpx;
+  height: 29rpx;
+  margin-right: 20rpx;
+}
+
+.input-box input {
+  color: #fff;
+}
+
+.my-swiper image {
+  width: 100%;
+  display: block;
+}
+
+.find-load {
+  padding: 20rpx 0;
+}
+
+.find-load image {
+  margin: 0 auto;
+  width: 116rpx;
+  height: 116rpx;
+  display: block;
+}
+
+.find-load {
+  border-bottom: 18rpx solid #f1f2f3;
+}
+
+.body {
+  padding: 26rpx 30rpx;
+}
+.recommend image {
+  width: 30rpx;
+  height: 34rpx;
+  margin-right: 10rpx;
+}
+
+.recommend text {
+  font-weight: 700;
+}
+
+.recommend .more {
+  color: #b4b4b4;
+}
+.details{
+  padding :20rpx 0;
+  border-bottom: 1px solid #b4b4b4;
+}
+.details image {
+  width: 220rpx;
+  height: 142rpx;
+}
+
+.details .title {
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.details .address{
+  /* margin-top:-5rpx; */
+}
+.address image {
+  width: 13rpx;
+  height: 17rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+  margin-top: 10rpx;
+}
+
+.address text {
+  font-size: 24rpx;
+  color: #b4b4b4;
+}
+
+.details .lesson {
+  font-size: 22rpx;
+  color: #13cfab;
+}
+
+.collage-btn {
+  width: 155rpx;
+  height: 60rpx;
+  background: #ff6169;
+  border-radius: 60rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.derection{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.pos{
+  position: absolute;
+  top: 0;
+  left: 0;
+}

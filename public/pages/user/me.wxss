@@ -1,0 +1,136 @@
+.order-shop{
+  border-bottom:18rpx solid #f3f3f3;
+}
+.table-nav{
+  padding-bottom:20rpx;
+  border-bottom:2px solid #f3f3f3;
+}
+.table-nav text{
+  border-bottom: 1px solid #fff;
+}
+.table-nav text.active{
+  border-bottom: 1px solid red;
+  color: red;
+  padding: 45rpx 0;
+}
+.appoint-lesson .no-lesson{
+  padding: 10rpx 10rpx;
+  margin-top: 170rpx;
+}
+.no-lesson .img-box image{
+  width:107rpx;
+  height:100rpx;
+}
+.appoint-lesson .no-lesson .title{
+  color: #333;
+  font-size: 32rpx;
+  text-align: center;
+  margin-top: 45rpx;
+}
+.appoint-lesson .no-lesson .con{
+  color: #595959;
+  font-size: 28rpx;
+  text-align: center;
+  margin: 30rpx 0;
+}
+.appoint-lesson .no-lesson button{
+  width: 380rpx;
+  color: #ffc000;
+  border-color: #ffc000;
+}
+
+.order-shop .title{
+  padding:20rpx 34rpx;
+}
+
+.order-shop .title .shop{
+  font-size: 28rpx;
+  color: #333;
+}
+.order-shop .title .address image{
+  width: 13rpx;
+  height: 17rpx;
+  margin-right: 10rpx;
+}
+.order-shop .title .address text{
+  font-size: 24rpx;
+  color: #999;
+}
+
+.order-shop .body{
+  padding: 12rpx 34rpx 30rpx;
+  background: #f3f3f3;
+}
+.body .main{
+  display: flex;
+}
+.body .main image{
+  width: 132rpx;
+  height: 156rpx;
+  border-radius: 10rpx;
+  margin-right: 10rpx;
+}
+.body .main .lesson-info{
+  /* margin-top:-16rpx; */
+}
+.body .main .lesson-info image{
+  width: 34rpx;
+  height: 33rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.body .main .lesson-info view{
+  line-height:28rpx;
+}
+.body .main .lesson-info view text{
+font-size: 22rpx;
+  color: #595959;  
+}
+.body .main .lesson-info view.lesson-title text{
+  color: #333;
+}
+.body .price{
+  text-align: right;
+  margin-top: -108rpx;
+}
+.body .price :nth-child(1){
+  color: #333;
+  font-size: 24rpx;
+}
+.body .price :nth-child(2){
+  color: #9e9e9e;
+  font-size: 24rpx;
+}
+
+.order-shop .order{
+  padding: 14rpx 34rpx;
+  border-bottom: 2px solid #f3f3f3;
+}
+.order-shop .order text{
+  font-size: 24rpx;
+  color: #858585;
+}
+.order-shop .order .copy-btn{
+  border: 1px solid #858585;
+  font-size: 24rpx;
+  color: #858585; 
+  padding: 10rpx;
+}
+.order-shop .order text.color-red{
+  color: #ff646c;
+}
+.order-shop .call{
+  padding:12rpx 70rpx;
+}
+.call image{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.call .call-phone text{
+  font-size: 24rpx;
+  color: #595959;
+}
+ 

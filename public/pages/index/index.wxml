@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='head between'>
+    <view class='derect'>
+      <text>成都</text>
+      <image src='../../images/derection.png'></image>
+    </view>
+    <view class='input-box'>
+      <image src='../../images/select.png'></image>
+      <input placeholder='请输入相关文字' placeholder-style='color:#fff;font-size:30rpx;'></input>
+    </view>
+  </view>
+
+  <view class='my-swiper'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <swiper-item wx:for="{{imgUrls}}" wx:key="index">
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class='find-load around'>
+    <view>
+      <image src='../../images/street.png'></image>
+      <text>按社区街道找店</text>
+    </view>
+    <view>
+      <image src='../../images/derect.png'></image>
+      <text>按定位找店</text>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='recommend between'>
+      <view>
+        <image src='../../images/hot.png'></image>
+        <text>热门推荐</text>
+      </view>
+      <view class='more'>更多</view>
+    </view>
+
+    <view class='details left' wx:for="{{recommendInfo}}">
+      <view style='margin-right:30rpx;'>
+        <image src="{{item.url}}"></image>
+      </view>
+      <view style='width:100%;'>
+        <view style='margin-top:-14rpx'>
+          <text class='title'>{{item.title}}</text>
+          <view class='address left'>
+            <image src='../../images/derection-small.png'></image>
+            <text>{{item.address}}</text>
+          </view>
+        </view>
+
+        <view style='margin-top:48rpx;'>
+          <view class='between' style='position:relative'>
+            <view class='lesson'>健身课程已拼单
+              <text>{{item.lesson}}</text>节</view>
+            <view class='collage-btn'>去拼单</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
